@@ -17,6 +17,7 @@ Automated testing framework for an e-commerce application using Selenium, TestNG
 - Open `index.html` in a browser to view detailed test results.
 
 ## Project Structure
+```
 EcommerceAutomation/
 │
 ├── src/
@@ -57,6 +58,7 @@ EcommerceAutomation/
 ├── test-output/
 ├── JRE System Library [JavaSE-17]
 └── Maven Dependencies
+```
 
 
 ## How to Run

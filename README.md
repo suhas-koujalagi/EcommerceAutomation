@@ -3,6 +3,10 @@
 ## Project Description
 Automated testing framework for an e-commerce application using Selenium, TestNG, Cucumber, and Maven.
 
+## Test Website
+- URL: [https://www.saucedemo.com/](https://www.saucedemo.com/)  
+- Used for practicing automation scenarios such as login, adding products to cart, checkout, and workflow testing.
+
 ## Tools & Technologies
 - Java 21
 - Selenium WebDriver
@@ -10,11 +14,10 @@ Automated testing framework for an e-commerce application using Selenium, TestNG
 - Cucumber
 - Maven
 - Eclipse IDE
-- Sauce Labs (optional for cross-browser testing)
 
 ## Test Reports
 - Extent Reports are generated in the `test-output/extent-report/` folder after test execution.
-- Open `index.html` in a browser to view detailed test results.
+- Open `ExtentReport.html` in a browser to view detailed test results.
 
 ## Project Structure
 ```

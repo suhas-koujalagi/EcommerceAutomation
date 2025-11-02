@@ -1,25 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-01T21:25:59 IST" name="Suite" finished-at="2025-11-01T21:26:04 IST" duration-ms="4583">
+  <suite started-at="2025-11-02T20:24:10 IST" name="Default suite" finished-at="2025-11-02T20:24:33 IST" duration-ms="23493">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ssk.qa.runners.TestRunner@5e5d171f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-01T21:25:59 IST" name="Test" finished-at="2025-11-01T21:26:04 IST" duration-ms="4583">
-      <class name="com.ssk.qa.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ssk.qa.tests.LoginTest@75d4a5c2]" started-at="2025-11-01T21:25:59 IST" name="setup" finished-at="2025-11-01T21:26:03 IST" duration-ms="3988" status="PASS">
+    <test started-at="2025-11-02T20:24:10 IST" name="Default test" finished-at="2025-11-02T20:24:33 IST" duration-ms="23493">
+      <class name="com.ssk.qa.runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.ssk.qa.runners.TestRunner@5e5d171f]" started-at="2025-11-02T20:24:10 IST" name="setUpClass" finished-at="2025-11-02T20:24:11 IST" duration-ms="639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6ed18d80]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyValidLogin()[pri:0, instance:com.ssk.qa.tests.LoginTest@75d4a5c2]" started-at="2025-11-01T21:26:03 IST" name="verifyValidLogin" finished-at="2025-11-01T21:26:04 IST" duration-ms="305" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ssk.qa.runners.TestRunner@5e5d171f]" started-at="2025-11-02T20:24:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-02T20:24:17 IST" duration-ms="6131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["E-commerce Workflow Automation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.LoginTest@75d4a5c2]" started-at="2025-11-01T21:26:04 IST" name="tearDown" finished-at="2025-11-01T21:26:04 IST" duration-ms="246" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ssk.qa.runners.TestRunner@5e5d171f]" started-at="2025-11-02T20:24:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-02T20:24:20 IST" duration-ms="3117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can add a product to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["E-commerce Workflow Automation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ssk.qa.tests.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ssk.qa.runners.TestRunner@5e5d171f]" started-at="2025-11-02T20:24:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-02T20:24:28 IST" duration-ms="7662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can checkout successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["E-commerce Workflow Automation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ssk.qa.runners.TestRunner@5e5d171f]" started-at="2025-11-02T20:24:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-02T20:24:33 IST" duration-ms="5879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can logout successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["E-commerce Workflow Automation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ssk.qa.runners.TestRunner@5e5d171f]" started-at="2025-11-02T20:24:33 IST" name="tearDownClass" finished-at="2025-11-02T20:24:33 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.ssk.qa.runners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

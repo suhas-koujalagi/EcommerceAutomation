@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ssk.qa.tests.TestRunner">
+      <class name="com.ssk.qa.tests.EcommerceTests">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="2"/>
-          <include name="tearDownClass"/>
+          <include name="verifyValidLogin"/>
         </methods>
-      </class> <!-- com.ssk.qa.tests.TestRunner -->
+      </class> <!-- com.ssk.qa.tests.EcommerceTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

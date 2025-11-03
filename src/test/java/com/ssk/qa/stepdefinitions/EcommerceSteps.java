@@ -1,10 +1,17 @@
 package com.ssk.qa.stepdefinitions;
 
-import com.ssk.qa.pages.*;
-import io.cucumber.java.en.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+
+import com.ssk.qa.pages.CartPage;
+import com.ssk.qa.pages.CheckoutPage;
+import com.ssk.qa.pages.LoginPage;
+import com.ssk.qa.pages.LogoutPage;
+import com.ssk.qa.pages.ProductsPage;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class EcommerceSteps {
 
@@ -73,9 +80,12 @@ public class EcommerceSteps {
     @When("user clicks logout")
     public void user_clicks_logout() {
         try {
-            driver.findElement(By.id("react-burger-menu-btn")).click();
-            Thread.sleep(1000); // Wait for menu animation
-            driver.findElement(By.id("logout_sidebar_link")).click();
+        	LogoutPage logoutPage = new LogoutPage(driver);
+
+    		logoutPage.openOptionsMenu();
+    		Thread.sleep(2000);
+    		logoutPage.clickLogoutButton();
+    		
         } catch (Exception e) {
             throw new RuntimeException("Logout failed - menu not found", e);
         }

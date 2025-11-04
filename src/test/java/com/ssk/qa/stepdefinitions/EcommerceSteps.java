@@ -8,6 +8,7 @@ import com.ssk.qa.pages.CheckoutPage;
 import com.ssk.qa.pages.LoginPage;
 import com.ssk.qa.pages.LogoutPage;
 import com.ssk.qa.pages.ProductsPage;
+import com.ssk.qa.utils.ConfigReader;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -23,10 +24,10 @@ public class EcommerceSteps {
 
     @Given("user is logged in to SauceDemo")
     public void user_is_logged_in_to_sauce_demo() {
-        driver.get("https://www.saucedemo.com/");
+        driver.get(ConfigReader.getProperty("baseUrl"));
         loginPage = new LoginPage(driver);
-        loginPage.enterUsername("standard_user");
-        loginPage.enterPassword("secret_sauce");
+        loginPage.enterUsername(ConfigReader.getProperty("username"));
+        loginPage.enterPassword(ConfigReader.getProperty("password"));
         loginPage.clickLogin();
         productsPage = new ProductsPage(driver);
     }
@@ -43,10 +44,10 @@ public class EcommerceSteps {
 
     @Given("user has a product in the cart")
     public void user_has_a_product_in_the_cart() {
-        driver.get("https://www.saucedemo.com/");
+        driver.get(ConfigReader.getProperty("baseUrl"));
         loginPage = new LoginPage(driver);
-        loginPage.enterUsername("standard_user");
-        loginPage.enterPassword("secret_sauce");
+        loginPage.enterUsername(ConfigReader.getProperty("username"));
+        loginPage.enterPassword(ConfigReader.getProperty("password"));
         loginPage.clickLogin();
 
         productsPage = new ProductsPage(driver);
@@ -59,7 +60,7 @@ public class EcommerceSteps {
     public void user_proceeds_to_checkout_and_enters_details() {
         cartPage.clickCheckout();
         checkoutPage = new CheckoutPage(driver);
-        checkoutPage.enterUserDetails("Suhas", "SK", "560001");
+        checkoutPage.enterUserDetails("Suhas", "Koujalagi", "560001");
         checkoutPage.completeCheckout();
     }
 
@@ -70,10 +71,10 @@ public class EcommerceSteps {
 
     @Given("user is on the Products page")
     public void user_is_on_the_products_page() {
-        driver.get("https://www.saucedemo.com/");
+        driver.get(ConfigReader.getProperty("baseUrl"));
         loginPage = new LoginPage(driver);
-        loginPage.enterUsername("standard_user");
-        loginPage.enterPassword("secret_sauce");
+        loginPage.enterUsername(ConfigReader.getProperty("username"));
+        loginPage.enterPassword(ConfigReader.getProperty("password"));
         loginPage.clickLogin();
     }
 

@@ -1,37 +1,37 @@
 package com.ssk.qa.tests;
 
-import com.ssk.qa.base.BaseTest;
+import java.time.Duration;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.ssk.qa.base.SetupTest;
 import com.ssk.qa.pages.CartPage;
 import com.ssk.qa.pages.CheckoutPage;
 import com.ssk.qa.pages.LoginPage;
 import com.ssk.qa.pages.LogoutPage;
 import com.ssk.qa.pages.ProductsPage;
+import com.ssk.qa.utils.ConfigReader;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+public class EndToEndTest extends SetupTest {
 
-import java.time.Duration;
-
-public class EndToEndTest extends BaseTest {
-
-	// 1) Login
 	@Test(priority = 1)
 	public void loginTest() {
 		// ensure small global buffer in case BaseTest didn't set it
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 		LoginPage loginPage = new LoginPage(driver);
-		driver.get("https://www.saucedemo.com/");
+		driver.get(ConfigReader.getProperty("baseUrl"));
 
-		loginPage.enterUsername("standard_user");
-		loginPage.enterPassword("secret_sauce");
+		loginPage.enterUsername(ConfigReader.getProperty("username"));
+		loginPage.enterPassword(ConfigReader.getProperty("password"));
 		loginPage.clickLogin();
 
 		// Assert landed on Products page
 		Assert.assertTrue(loginPage.isLoginSuccessful(), "Login failed — Products page not visible");
 	}
 
-	// 2) Add to Cart (depends on login)
+	// Add to Cart (depends on login)
 	@Test(priority = 2, dependsOnMethods = {"loginTest"})
 	public void addToCartTest() {
 		ProductsPage productsPage = new ProductsPage(driver);
@@ -43,7 +43,7 @@ public class EndToEndTest extends BaseTest {
 		Assert.assertTrue(productsPage.isProductAdded(), "Product was not added to cart");
 	}
 
-	// 3) Checkout (depends on addToCart)
+	// Checkout (depends on addToCart)
 	@Test(priority = 3, dependsOnMethods = {"addToCartTest"})
 	public void checkoutTest() {
 		ProductsPage productsPage = new ProductsPage(driver);
@@ -60,7 +60,7 @@ public class EndToEndTest extends BaseTest {
 		Assert.assertTrue(checkoutPage.isOrderSuccessful(), "Order was not placed successfully");
 	}
 
-	// 4) Logout (depends on checkout)
+	// Logout (depends on checkout)
 	@Test(priority = 4, dependsOnMethods = {"checkoutTest"})
 	public void logoutTest() {
 		// We expect to be on the final/confirmation or products page; go to products to be safe

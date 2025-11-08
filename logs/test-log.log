@@ -1,0 +1,38 @@
+[2025-11-08 11:56:06] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
+[2025-11-08 11:56:06] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-08 11:56:17] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
+[2025-11-08 11:56:22] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
+[2025-11-08 11:56:22] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-08 11:56:23] INFO  EndToEndTest - ✅ Login successful for user: standard_user
+[2025-11-08 11:56:24] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
+[2025-11-08 11:56:24] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-08 11:56:25] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
+[2025-11-08 11:56:26] INFO  EndToEndTest - 👋 Logout action performed for standard_user
+[2025-11-08 11:56:26] INFO  EndToEndTest - ✅ Logout successful for standard_user
+[2025-11-08 11:56:31] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
+[2025-11-08 11:56:31] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-08 11:56:32] INFO  EndToEndTest - ✅ Login successful for user: visual_user
+[2025-11-08 11:56:32] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
+[2025-11-08 11:56:33] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-08 11:56:34] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
+[2025-11-08 11:56:35] INFO  EndToEndTest - 👋 Logout action performed for visual_user
+[2025-11-08 11:56:35] INFO  EndToEndTest - ✅ Logout successful for visual_user
+[2025-11-08 12:09:19] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
+[2025-11-08 12:09:19] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-08 12:09:19] INFO  EndToEndTest - ✅ Login successful for user: visual_user
+[2025-11-08 12:09:19] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
+[2025-11-08 12:09:20] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-08 12:09:20] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
+[2025-11-08 12:09:21] INFO  EndToEndTest - 👋 Logout action performed for visual_user
+[2025-11-08 12:09:21] INFO  EndToEndTest - ✅ Logout successful for visual_user
+[2025-11-08 12:09:26] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
+[2025-11-08 12:09:26] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-08 12:09:37] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
+[2025-11-08 12:09:41] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
+[2025-11-08 12:09:41] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-08 12:09:41] INFO  EndToEndTest - ✅ Login successful for user: standard_user
+[2025-11-08 12:09:41] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
+[2025-11-08 12:09:41] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-08 12:09:42] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
+[2025-11-08 12:09:43] INFO  EndToEndTest - 👋 Logout action performed for standard_user
+[2025-11-08 12:09:43] INFO  EndToEndTest - ✅ Logout successful for standard_user

@@ -8,12 +8,9 @@
     <classes>
       <class name="com.ssk.qa.tests.EndToEndTest">
         <methods>
-          <include name="loginTest"/>
-          <include name="logoutTest"/>
-          <include name="addToCartTest"/>
+          <include name="verifyE2EWorkflow" invocation-numbers="2"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="checkoutTest"/>
         </methods>
       </class> <!-- com.ssk.qa.tests.EndToEndTest -->
     </classes>

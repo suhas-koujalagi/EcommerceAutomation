@@ -1,8 +1,8 @@
 package com.ssk.qa.tests;
 
-import java.time.Duration;
-
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
 import com.ssk.qa.base.SetupTest;
@@ -11,68 +11,95 @@ import com.ssk.qa.pages.CheckoutPage;
 import com.ssk.qa.pages.LoginPage;
 import com.ssk.qa.pages.LogoutPage;
 import com.ssk.qa.pages.ProductsPage;
-import com.ssk.qa.utils.ConfigReader;
+import com.ssk.qa.utils.ExcelUtils;
+
+import org.apache.logging.log4j.Logger;
+import com.ssk.qa.utils.LoggerManager;
 
 public class EndToEndTest extends SetupTest {
 
-	@Test(priority = 1)
-	public void loginTest() {
-		// ensure small global buffer in case BaseTest didn't set it
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	//using the logger from the util class LoggerManager
+	private static final Logger logger = LoggerManager.getLogger(EndToEndTest.class);
 
-		LoginPage loginPage = new LoginPage(driver);
-		driver.get(ConfigReader.getProperty("baseUrl"));
+    private String username;
+    private String password;
 
-		loginPage.enterUsername(ConfigReader.getProperty("username"));
-		loginPage.enterPassword(ConfigReader.getProperty("password"));
-		loginPage.clickLogin();
+    public EndToEndTest() {}
 
-		// Assert landed on Products page
-		Assert.assertTrue(loginPage.isLoginSuccessful(), "Login failed — Products page not visible");
-	}
+    public EndToEndTest(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
-	// Add to Cart (depends on login)
-	@Test(priority = 2, dependsOnMethods = {"loginTest"})
-	public void addToCartTest() {
-		ProductsPage productsPage = new ProductsPage(driver);
+    @DataProvider(name = "loginData")
+    public static Object[][] getLoginData() {
+        String path = "src/test/resources/testdata/LoginData.xlsx";
+        return ExcelUtils.getExcelData(path, "LoginData");
+    }
 
-		// Add first product
-		productsPage.addProductToCart();
+    @Factory(dataProvider = "loginData")
+    public static Object[] createInstances(String username, String password) {
+        return new Object[]{ new EndToEndTest(username, password) };
+    }
 
-		// Assert cart badge is visible and shows item(s)
-		Assert.assertTrue(productsPage.isProductAdded(), "Product was not added to cart");
-	}
+    @Test(description = "Full end-to-end workflow for each user")
+    public void verifyEndToEndTestWorkflow() {
+        logger.info("🚀 Starting test for user: {}", username);
 
-	// Checkout (depends on addToCart)
-	@Test(priority = 3, dependsOnMethods = {"addToCartTest"})
-	public void checkoutTest() {
-		ProductsPage productsPage = new ProductsPage(driver);
-		productsPage.openCart();
+        driver.get("https://www.saucedemo.com/");
+        logger.info("🌐 Navigated to SauceDemo homepage");
 
-		CartPage cartPage = new CartPage(driver);
-		cartPage.clickCheckout();
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
+        logger.debug("🧩 Entered credentials — Username: [{}], Password: [{}]", username, password);
 
-		CheckoutPage checkoutPage = new CheckoutPage(driver);
-		// fill details and complete checkout
-		checkoutPage.enterUserDetails("Suhas", "SK", "560001");
-		checkoutPage.completeCheckout();
+        loginPage.clickLogin();
 
-		Assert.assertTrue(checkoutPage.isOrderSuccessful(), "Order was not placed successfully");
-	}
+        // Handle locked_out_user
+        if (username.equalsIgnoreCase("locked_out_user")) {
+            boolean loginSuccess = loginPage.isLoginSuccessful();
+            if (loginSuccess) {
+                logger.error("❌ Locked user was able to log in! {}", username);
+                Assert.fail("Login should fail for locked_out_user but passed!");
+            } else {
+                logger.warn("🔒 Locked user detected and correctly blocked: {}", username);
+            }
+            return; // stop here for locked user
+        }
 
-	// Logout (depends on checkout)
-	@Test(priority = 4, dependsOnMethods = {"checkoutTest"})
-	public void logoutTest() {
-		// We expect to be on the final/confirmation or products page; go to products to be safe
-		driver.get("https://www.saucedemo.com/inventory.html");
+        // Proceed for valid users
+        Assert.assertTrue(loginPage.isLoginSuccessful(), "❌ Login failed unexpectedly for: " + username);
+        logger.info("✅ Login successful for user: {}", username);
 
-		// Click menu and logout
-		LogoutPage logoutPage = new LogoutPage(driver);
+        // Add to Cart
+        ProductsPage productsPage = new ProductsPage(driver);
+        productsPage.addProductToCart();
+        Assert.assertTrue(productsPage.isProductAdded(), "❌ Product not added to cart.");
+        logger.info("🛒 Product successfully added to cart for {}", username);
 
-		logoutPage.openOptionsMenu();
-		logoutPage.clickLogoutButton();  
+        // Checkout
+        productsPage.openCart();
+        CartPage cartPage = new CartPage(driver);
+        cartPage.clickCheckout();
+        logger.info("💳 Proceeding to checkout page");
 
-		// Verify redirected back to login
-		Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo.com"), "Logout did not redirect to login page");
-	}
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        checkoutPage.enterUserDetails("Suhas", "Koujalagi", "560001");
+        checkoutPage.completeCheckout();
+        Assert.assertTrue(checkoutPage.isOrderSuccessful(),
+                "❌ Order was not completed successfully for: " + username);
+        logger.info("🎉 Order completed successfully for {}", username);
+
+        // Logout
+        LogoutPage logoutPage = new LogoutPage(driver);
+        logoutPage.openOptionsMenu();
+        logoutPage.clickLogoutButton();
+        logger.info("👋 Logout action performed for {}", username);
+
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains("saucedemo.com"),
+                "❌ Logout did not redirect to login page for " + username);
+        logger.info("✅ Logout successful for {}", username);
+    }
 }

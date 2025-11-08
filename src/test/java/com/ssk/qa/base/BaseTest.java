@@ -22,7 +22,7 @@ public class BaseTest {
         ConfigReader.loadConfig();
         String browser = ConfigReader.getProperty("browser");
         String url = ConfigReader.getProperty("baseUrl");
-
+        
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
@@ -35,7 +35,7 @@ public class BaseTest {
         } else {
             throw new RuntimeException("Invalid browser specified in config.properties: " + browser);
         }
-
+        
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get(url);

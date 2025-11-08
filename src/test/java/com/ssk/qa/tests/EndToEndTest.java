@@ -44,6 +44,11 @@ public class EndToEndTest extends SetupTest {
 
     @Test(description = "Full end-to-end workflow for each user")
     public void verifyEndToEndTestWorkflow() {
+    	
+    	logger.info("Thread={} | Browser={}", Thread.currentThread().getName(),
+                System.getProperty("selenium.browser", "from-xml-or-config"));
+
+    	
         logger.info("🚀 Starting test for user: {}", username);
 
         driver.get("https://www.saucedemo.com/");

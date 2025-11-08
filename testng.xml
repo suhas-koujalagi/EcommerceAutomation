@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite >
-<suite name="Suite">
+<!DOCTYPE suite>
+<suite name="CrossBrowserSuite" parallel="tests" thread-count="2">
 
- <listeners>
-        <listener class-name="com.ssk.qa.utils.TestListener"/>
-    </listeners>
+  <listeners>
+    <listener class-name="com.ssk.qa.utils.TestListener"/>
+  </listeners>
 
-	
-  <test thread-count="5" name="Test">
+  <test name="ChromeTest">
+    <parameter name="browser" value="chrome" />
     <classes>
       <class name="com.ssk.qa.tests.EndToEndTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+
+  <test name="EdgeTest">
+    <parameter name="browser" value="edge" />
+    <classes>
+      <class name="com.ssk.qa.tests.EndToEndTest"/>
+    </classes>
+  </test>
+
+</suite>

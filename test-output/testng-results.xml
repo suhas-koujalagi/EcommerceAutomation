@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-08T12:42:45 IST" name="CrossBrowserSuite" finished-at="2025-11-08T12:43:32 IST" duration-ms="46378">
+  <suite started-at="2025-11-09T13:01:01 IST" name="CrossBrowserSuite" finished-at="2025-11-09T13:01:39 IST" duration-ms="38163">
     <groups>
     </groups>
-    <test started-at="2025-11-08T12:42:45 IST" name="EdgeTest" finished-at="2025-11-08T12:43:20 IST" duration-ms="34712">
+    <test started-at="2025-11-09T13:01:01 IST" name="EdgeTest" finished-at="2025-11-09T13:01:37 IST" duration-ms="35837">
       <class name="com.ssk.qa.tests.EndToEndTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@55ec556, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:42:45 IST" name="setup" finished-at="2025-11-08T12:42:49 IST" duration-ms="3089" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@4038cd3a, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:01 IST" name="setup" finished-at="2025-11-09T13:01:03 IST" duration-ms="2083" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3ac8cf9b, instance params:[standard_user, secret_sauce]]" started-at="2025-11-08T12:42:49 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-08T12:42:55 IST" duration-ms="6712" status="PASS">
+        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@15d0849, instance params:[standard_user, secret_sauce]]" started-at="2025-11-09T13:01:03 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-09T13:01:13 IST" duration-ms="9384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndToEndTestWorkflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@55ec556, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:42:55 IST" name="tearDown" finished-at="2025-11-08T12:42:56 IST" duration-ms="311" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@4038cd3a, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:13 IST" name="tearDown" finished-at="2025-11-09T13:01:13 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@55ec556, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:42:56 IST" name="setup" finished-at="2025-11-08T12:42:57 IST" duration-ms="1600" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@4038cd3a, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:13 IST" name="setup" finished-at="2025-11-09T13:01:14 IST" duration-ms="891" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@55ec556, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:42:57 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-08T12:43:05 IST" duration-ms="8088" status="PASS">
+        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3533df16, instance params:[locked_out_user, secret_sauce]]" started-at="2025-11-09T13:01:14 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-09T13:01:29 IST" duration-ms="15229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndToEndTestWorkflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@55ec556, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:05 IST" name="tearDown" finished-at="2025-11-08T12:43:06 IST" duration-ms="361" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@4038cd3a, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:29 IST" name="tearDown" finished-at="2025-11-09T13:01:29 IST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@55ec556, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:06 IST" name="setup" finished-at="2025-11-08T12:43:07 IST" duration-ms="1146" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@4038cd3a, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:29 IST" name="setup" finished-at="2025-11-09T13:01:30 IST" duration-ms="741" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,19 +56,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@7aead3af, instance params:[locked_out_user, secret_sauce]]" started-at="2025-11-08T12:43:07 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-08T12:43:20 IST" duration-ms="12830" status="PASS">
+        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@4038cd3a, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:30 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-09T13:01:37 IST" duration-ms="6789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndToEndTestWorkflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@55ec556, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:20 IST" name="tearDown" finished-at="2025-11-08T12:43:20 IST" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@4038cd3a, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:37 IST" name="tearDown" finished-at="2025-11-09T13:01:37 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ssk.qa.tests.EndToEndTest -->
     </test> <!-- EdgeTest -->
-    <test started-at="2025-11-08T12:42:45 IST" name="ChromeTest" finished-at="2025-11-08T12:43:32 IST" duration-ms="46378">
+    <test started-at="2025-11-09T13:01:01 IST" name="ChromeTest" finished-at="2025-11-09T13:01:39 IST" duration-ms="38163">
       <class name="com.ssk.qa.tests.EndToEndTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@76c548f, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:42:45 IST" name="setup" finished-at="2025-11-08T12:42:52 IST" duration-ms="6442" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3cec79d3, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:01 IST" name="setup" finished-at="2025-11-09T13:01:03 IST" duration-ms="2134" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,15 +79,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@1686f0b4, instance params:[standard_user, secret_sauce]]" started-at="2025-11-08T12:42:52 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-08T12:43:01 IST" duration-ms="9099" status="PASS">
+        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3cec79d3, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:03 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-09T13:01:13 IST" duration-ms="9950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndToEndTestWorkflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@76c548f, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:01 IST" name="tearDown" finished-at="2025-11-08T12:43:01 IST" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3cec79d3, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:13 IST" name="tearDown" finished-at="2025-11-09T13:01:14 IST" duration-ms="357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@76c548f, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:01 IST" name="setup" finished-at="2025-11-08T12:43:02 IST" duration-ms="1113" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3cec79d3, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:14 IST" name="setup" finished-at="2025-11-09T13:01:15 IST" duration-ms="909" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,15 +98,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@56d93692, instance params:[locked_out_user, secret_sauce]]" started-at="2025-11-08T12:43:02 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-08T12:43:16 IST" duration-ms="13494" status="PASS">
+        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@61e3cf4d, instance params:[standard_user, secret_sauce]]" started-at="2025-11-09T13:01:15 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-09T13:01:23 IST" duration-ms="8307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndToEndTestWorkflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@76c548f, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:16 IST" name="tearDown" finished-at="2025-11-08T12:43:17 IST" duration-ms="1040" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3cec79d3, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:23 IST" name="tearDown" finished-at="2025-11-09T13:01:23 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@76c548f, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:17 IST" name="setup" finished-at="2025-11-08T12:43:18 IST" duration-ms="1424" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3cec79d3, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:23 IST" name="setup" finished-at="2025-11-09T13:01:24 IST" duration-ms="856" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,54 +117,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@76c548f, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:18 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-08T12:43:31 IST" duration-ms="12379" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for url to contain "checkout-step-two". Current url: "https://www.saucedemo.com/checkout-step-one.html" (tried for 8 second(s) with 500 milliseconds interval)
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.134, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\suhas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61685}, goog:processID: 22864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61685/devtoo..., se:cdpVersion: 142.0.7444.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bae4589b75d52382acf3a8511f4a6f54]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "checkout-step-two". Current url: "https://www.saucedemo.com/checkout-step-one.html" (tried for 8 second(s) with 500 milliseconds interval)
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.134, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\suhas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61685}, goog:processID: 22864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61685/devtoo..., se:cdpVersion: 142.0.7444.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bae4589b75d52382acf3a8511f4a6f54
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.ssk.qa.pages.CheckoutPage.completeCheckout(CheckoutPage.java:59)
-at com.ssk.qa.tests.EndToEndTest.verifyEndToEndTestWorkflow(EndToEndTest.java:94)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="verifyEndToEndTestWorkflow()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@6f38a289, instance params:[locked_out_user, secret_sauce]]" started-at="2025-11-09T13:01:24 IST" name="verifyEndToEndTestWorkflow" description="Full end-to-end workflow for each user" finished-at="2025-11-09T13:01:39 IST" duration-ms="15230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEndToEndTestWorkflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@76c548f, instance params:[visual_user, secret_sauce]]" started-at="2025-11-08T12:43:31 IST" name="tearDown" finished-at="2025-11-08T12:43:32 IST" duration-ms="898" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ssk.qa.tests.EndToEndTest@3cec79d3, instance params:[visual_user, secret_sauce]]" started-at="2025-11-09T13:01:39 IST" name="tearDown" finished-at="2025-11-09T13:01:39 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

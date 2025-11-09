@@ -3,6 +3,7 @@ package com.ssk.qa.tests;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ssk.qa.base.SetupTest;
@@ -16,6 +17,7 @@ import com.ssk.qa.utils.ExcelUtils;
 import org.apache.logging.log4j.Logger;
 import com.ssk.qa.utils.LoggerManager;
 
+@Listeners(com.ssk.qa.utils.TestListener.class)
 public class EndToEndTest extends SetupTest {
 
 	//using the logger from the util class LoggerManager
@@ -42,7 +44,7 @@ public class EndToEndTest extends SetupTest {
         return new Object[]{ new EndToEndTest(username, password) };
     }
 
-    @Test(description = "Full end-to-end workflow for each user")
+    @Test(description = "Full end-to-end workflow for each user", retryAnalyzer = com.ssk.qa.utils.RetryAnalyzer.class)
     public void verifyEndToEndTestWorkflow() {
     	
     	logger.info("Thread={} | Browser={}", Thread.currentThread().getName(),

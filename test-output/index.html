@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-CrossBrowserSuite" class="navigator-link">
-              <span class="suite-name border-failed">CrossBrowserSuite</span>
+              <span class="suite-name border-passed">CrossBrowserSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-CrossBrowserSuite" class="hide-methods failed suite-CrossBrowserSuite"> (hide)</a> <!-- hide-methods failed suite-CrossBrowserSuite -->
-                      <a href="#" panel-name="suite-CrossBrowserSuite" class="show-methods failed suite-CrossBrowserSuite"> (show)</a> <!-- show-methods failed suite-CrossBrowserSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-CrossBrowserSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.ssk.qa.tests.EndToEndTest" class="method navigator-link" hash-for-method="verifyEndToEndTestWorkflow">verifyEndToEndTestWorkflow</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-CrossBrowserSuite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +101,11 @@
                       <a href="#" panel-name="suite-CrossBrowserSuite" class="show-methods passed suite-CrossBrowserSuite"> (show)</a> <!-- show-methods passed suite-CrossBrowserSuite -->
                     </span>
                     <div class="method-list-content passed suite-CrossBrowserSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.ssk.qa.tests.EndToEndTest" class="method navigator-link" hash-for-method="verifyEndToEndTestWorkflow">verifyEndToEndTestWorkflow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-CrossBrowserSuite" title="com.ssk.qa.tests.EndToEndTest" class="method navigator-link" hash-for-method="verifyEndToEndTestWorkflow">verifyEndToEndTestWorkflow</a> <!-- method navigator-link -->
@@ -152,9 +143,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CrossBrowserSuite" class="panel CrossBrowserSuite">
-          <div class="suite-CrossBrowserSuite-class-failed">
+          <div class="suite-CrossBrowserSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.ssk.qa.tests.EndToEndTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -163,35 +154,10 @@
                   <a name="verifyEndToEndTestWorkflow">
                   </a> <!-- verifyEndToEndTestWorkflow -->
                   <span class="method-name">verifyEndToEndTestWorkflow</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;checkout-step-two&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot; (tried for 8 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.134, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\suhas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61685}, goog:processID: 22864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61685/devtoo..., se:cdpVersion: 142.0.7444.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bae4589b75d52382acf3a8511f4a6f54
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.ssk.qa.pages.CheckoutPage.completeCheckout(CheckoutPage.java:59)
-	at com.ssk.qa.tests.EndToEndTest.verifyEndToEndTestWorkflow(EndToEndTest.java:94)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Full end-to-end workflow for each user)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CrossBrowserSuite-class-failed -->
-          <div class="suite-CrossBrowserSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.ssk.qa.tests.EndToEndTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="verifyEndToEndTestWorkflow">
@@ -308,32 +274,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyEndToEndTestWorkflow')
 data.setCell(0, 2, 'com.ssk.qa.tests.EndToEndTest')
-data.setCell(0, 3, 13494);
+data.setCell(0, 3, 15230);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyEndToEndTestWorkflow')
 data.setCell(1, 2, 'com.ssk.qa.tests.EndToEndTest')
-data.setCell(1, 3, 12830);
+data.setCell(1, 3, 15229);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyEndToEndTestWorkflow')
 data.setCell(2, 2, 'com.ssk.qa.tests.EndToEndTest')
-data.setCell(2, 3, 12379);
+data.setCell(2, 3, 9950);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyEndToEndTestWorkflow')
 data.setCell(3, 2, 'com.ssk.qa.tests.EndToEndTest')
-data.setCell(3, 3, 9099);
+data.setCell(3, 3, 9384);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyEndToEndTestWorkflow')
 data.setCell(4, 2, 'com.ssk.qa.tests.EndToEndTest')
-data.setCell(4, 3, 8088);
+data.setCell(4, 3, 8307);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyEndToEndTestWorkflow')
 data.setCell(5, 2, 'com.ssk.qa.tests.EndToEndTest')
-data.setCell(5, 3, 6712);
+data.setCell(5, 3, 6789);
 window.suiteTableData['CrossBrowserSuite']= { tableData: data, tableDiv: 'times-div-CrossBrowserSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-CrossBrowserSuite">
               </div> <!-- times-div-CrossBrowserSuite -->
             </div> <!-- times-div -->
@@ -370,69 +336,67 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyEndToEndTestWorkflow</span>
-                <span class="method-start">3092 ms</span>
+                <span class="method-start">2085 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyEndToEndTestWorkflow</span>
-                <span class="method-start">6442 ms</span>
+                <span class="method-start">2134 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9817 ms</span>
+                <span class="method-start">11483 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(edge)</span>
-                <span class="method-start">10131 ms</span>
+                <span class="method-start">11749 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyEndToEndTestWorkflow</span>
-                <span class="method-start">11731 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15543 ms</span>
+                <span class="method-start">12087 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">15818 ms</span>
+                <span class="method-start">12449 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyEndToEndTestWorkflow</span>
-                <span class="method-start">16931 ms</span>
+                <span class="method-start">12640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyEndToEndTestWorkflow</span>
+                <span class="method-start">13358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19823 ms</span>
+                <span class="method-start">21666 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">21847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEndToEndTestWorkflow</span>
+                <span class="method-start">22703 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27871 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(edge)</span>
-                <span class="method-start">20185 ms</span>
+                <span class="method-start">28058 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyEndToEndTestWorkflow</span>
-                <span class="method-start">21332 ms</span>
+                <span class="method-start">28799 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30427 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">31468 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyEndToEndTestWorkflow</span>
-                <span class="method-start">32893 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">34164 ms</span>
+                <span class="method-start">35590 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">45432 ms</span>
+                <span class="method-start">37934 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

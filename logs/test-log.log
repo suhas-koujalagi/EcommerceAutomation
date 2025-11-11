@@ -284,3 +284,47 @@
 [2025-11-11 11:52:47] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
 [2025-11-11 11:52:47] INFO  EndToEndTest - ? Logout action performed for visual_user
 [2025-11-11 11:52:47] INFO  EndToEndTest - ? Logout successful for visual_user
+[2025-11-11 12:30:42] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-11 12:30:42] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-11 12:30:42] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
+[2025-11-11 12:30:42] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
+[2025-11-11 12:30:46] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-11 12:30:46] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-11 12:30:57] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
+[2025-11-11 12:30:57] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
+[2025-11-11 12:30:59] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-11 12:30:59] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
+[2025-11-11 12:31:00] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-11 12:31:00] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
+[2025-11-11 12:31:02] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-11 12:31:02] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-11 12:31:03] INFO  EndToEndTest - ✅ Login successful for user: standard_user
+[2025-11-11 12:31:03] INFO  EndToEndTest - ✅ Login successful for user: standard_user
+[2025-11-11 12:31:03] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
+[2025-11-11 12:31:03] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
+[2025-11-11 12:31:03] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-11 12:31:03] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-11 12:31:04] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
+[2025-11-11 12:31:04] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
+[2025-11-11 12:31:05] INFO  EndToEndTest - 👋 Logout action performed for standard_user
+[2025-11-11 12:31:05] INFO  EndToEndTest - ✅ Logout successful for standard_user
+[2025-11-11 12:31:05] INFO  EndToEndTest - 👋 Logout action performed for standard_user
+[2025-11-11 12:31:05] INFO  EndToEndTest - ✅ Logout successful for standard_user
+[2025-11-11 12:31:06] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-11 12:31:06] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
+[2025-11-11 12:31:07] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-11 12:31:07] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
+[2025-11-11 12:31:09] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-11 12:31:10] INFO  EndToEndTest - ✅ Login successful for user: visual_user
+[2025-11-11 12:31:10] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
+[2025-11-11 12:31:10] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-11 12:31:10] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-11 12:31:11] INFO  EndToEndTest - ✅ Login successful for user: visual_user
+[2025-11-11 12:31:11] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
+[2025-11-11 12:31:11] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
+[2025-11-11 12:31:11] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-11 12:31:12] INFO  EndToEndTest - 👋 Logout action performed for visual_user
+[2025-11-11 12:31:12] INFO  EndToEndTest - ✅ Logout successful for visual_user
+[2025-11-11 12:31:12] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
+[2025-11-11 12:31:13] INFO  EndToEndTest - 👋 Logout action performed for visual_user
+[2025-11-11 12:31:13] INFO  EndToEndTest - ✅ Logout successful for visual_user

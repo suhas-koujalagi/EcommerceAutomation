@@ -1,78 +1,152 @@
-# EcommerceAutomation
+# EcommerceAutomation – Hybrid Test Automation Framework
+A complete end-to-end automation framework designed for modern QA engineering.
+Built with a powerful blend of Selenium, TestNG, Cucumber BDD, Page Object Model, Maven, Log4j2, Excel data-driven execution, and Jenkins CI/CD.
 
-## Project Description
-Automated testing framework for an e-commerce application using Selenium, TestNG, Cucumber, and Maven.
+## Project Overview
 
-## Test Website
-- URL: [https://www.saucedemo.com/](https://www.saucedemo.com/)  
-- Used for practicing automation scenarios such as login, adding products to cart, checkout, and workflow testing.
+### This framework automates workflows on https://www.saucedemo.com, validating:
+- User login
+- Product selection
+- Adding items to cart
+- Checkout process
+- Full order workflow
+- Logout functionality
+- Data-driven user tests
+- Parallel cross-browser execution
+- BDD scenario execution
+- CI/CD-ready TestNG suite
+All backed by extensive reporting, logging, retries, and screenshots.
 
-## Tools & Technologies
-- Java 21
-- Selenium WebDriver
-- TestNG
-- Cucumber
-- Maven
-- Eclipse IDE
+### Key Features
+- TestNG Framework (Primary Automation Suite)
+    - Page Object Model (POM)
+    - Parallel execution
+    - Retry Analyzer (Auto re-run flaky tests)
+    - Screenshot capture on failure
+    - Log4j2 structured logging
+    - Extent Reports (beautiful HTML report)
+    - Excel-driven test inputs
+    - Cross-browser: Chrome / Edge
+- Cucumber BDD (Behavior-Driven Layer)
+    - Gherkin scenarios
+    - Hooks for setup/cleanup
+    - Integrated with Selenium POM pages
+    - Separate report under target/
+    - CI/CD Ready (Jenkins + GitHub)
+    - Maven-driven automated execution
+    - HTML reports published after every build
+    - Fully local Jenkins integration
 
-## Test Reports
-- Extent Reports are generated in the `test-output/extent-report/` folder after test execution.
-- Open `ExtentReport.html` in a browser to view detailed test results.
+### Tech Stack
+```
+----------------------------------------------------------------
+| Component                         | Version / Tool           |
+|-----------------------------------|--------------------------|
+| **Java**                          | 17                       |
+| **Selenium WebDriver**            | 4.14.0                   |
+| **TestNG**                        | 7.8.0                    |
+| **Cucumber (TestNG integration)** | 7.30.0                   |
+| **Maven**                         | Build/Dependency Manager |
+| **Log4j2**                        | Logging                  |
+| **ExtentReports**                 | 5.0.9                    |
+| **Apache POI**                    | Excel test data          |
+| **WebDriverManager**              | Driver setup             |
+| **Jenkins**                       | CI/CD                    |
+----------------------------------------------------------------
+```
 
 ## Project Structure
 ```
 EcommerceAutomation/
 │
-├── src/
-│   ├── test/
-│   │   ├── java/
-│   │   │   ├── com/ssk/qa/base/
-│   │   │   │   └── BaseTest.java
-│   │   │   │
-│   │   │   ├── com/ssk/qa/pages/
-│   │   │   │   ├── CartPage.java
-│   │   │   │   ├── CheckoutPage.java
-│   │   │   │   ├── LoginPage.java
-│   │   │   │   └── ProductsPage.java
-│   │   │   │
-│   │   │   ├── com/ssk/qa/runners/
-│   │   │   │   └── TestRunner.java
-│   │   │   │
-│   │   │   ├── com/ssk/qa/stepdefinitions/
-│   │   │   │   ├── EcommerceSteps.java
-│   │   │   │   ├── Hooks.java
-│   │   │   │   └── LoginSteps.java
-│   │   │   │
-│   │   │   ├── com/ssk/qa/tests/
-│   │   │   │   └── LoginTest.java
-│   │   │   │
-│   │   │   └── com/ssk/qa/utils/
-│   │   │       └── ExtentReportManager.java
-│   │   │
-│   │   └── resources/
-│   │       └── features/
-│   │           └── Ecommerce.feature
+├── src/test/java/
+│   ├── com.ssk.qa.base/
+│   │     ├── BaseTest.java
+│   │     └── SetupTest.java
 │   │
-│   └── main/   (optional if backend logic exists)
+│   ├── com.ssk.qa.pages/
+│   │     ├── LoginPage.java
+│   │     ├── ProductsPage.java
+│   │     ├── CartPage.java
+│   │     ├── CheckoutPage.java
+│   │     └── LogoutPage.java
+│   │
+│   ├── com.ssk.qa.tests/
+│   │     └── EndToEndTest.java
+│   │
+│   ├── com.ssk.qa.stepdefinitions/
+│   │     ├── EcommerceSteps.java
+│   │     └── Hooks.java
+│   │
+│   ├── com.ssk.qa.runners/
+│   │     └── TestRunner.java
+│   │
+│   └── com.ssk.qa.utils/
+│         ├── ConfigReader.java
+│         ├── ExcelUtils.java
+│         ├── ExtentReportManager.java
+│         ├── ScreenshotManager.java
+│         ├── RetryAnalyzer.java
+│         ├── LoggerManager.java
+│         └── TestListener.java
 │
-├── pom.xml
+├── src/test/resources/
+│   ├── config/
+│   │     └── config.properties
+│   ├── features/
+│   │     └── Ecommerce.feature
+│   ├── testdata/
+│   │     └── LoginData.xlsx
+│   ├── logs/
+│   │     └── test-log.log
+│   └── reports/
+│         ├── screenshots/
+│         └── ExtentReports (timestamped)
+│
 ├── testng.xml
-├── target/
-├── test-output/
-├── JRE System Library [JavaSE-17]
-└── Maven Dependencies
+├── pom.xml
+└── README.md
 ```
 
+## Running the Tests
 
-## How to Run
-- Run all tests using `testng.xml` for full regression.
-- Run specific scenarios via Cucumber Runner for BDD-style workflows.
+### Run the TestNG Framework (Full Regression Suite)
+``` mvn clean test -DsuiteXmlFile=testng.xml ```
 
-## Notes
-- Page Objects contain reusable actions.
-- Step definitions call Page Objects to implement business workflows (BDD-based).
-- TestNG tests validate core logic and assertions.
+- This runs:
+    - All TestNG tests
+    - Retry Analyzer
+    - Screenshots on failure
+    - Log4j2 logging
+    - Extent HTML report generation
 
-## Project Status
-- Work in progress: Core automation framework is implemented.
-- Additional test scenarios, reporting enhancements, and cross-browser support are being added.
+- Report Location: `/reports/Ecommerce_Automation_Report_<timestamp>.html`
+
+
+### Run Cucumber Tests (BDD)
+``` mvn test -Dcucumber.options="--plugin pretty" ```
+or execute: `TestRunner.java`
+
+- Cucumber HTML Report Location: `/target/cucumber-html-report/`
+
+## What’s Tested
+- Multi-user login test (Excel-driven)
+- Add to cart
+- Checkout workflow
+- Logout
+- Full end-to-end scenarios with parallel execution
+
+## CI/CD – Jenkins Pipeline
+This project supports:
+✔ Manual trigger
+✔ GitHub automatic trigger
+✔ Publishing HTML reports
+✔ Running TestNG suite via Jenkins
+✔ Running Cucumber (optional separate job)
+
+## Future Enhancements
+Docker-based Selenium Grid
+Allure Reporting
+Distributed parallel execution
+API + UI hybrid testing
+Additional workflows & data sets

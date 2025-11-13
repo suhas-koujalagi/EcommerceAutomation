@@ -1,42 +1,45 @@
 package com.ssk.qa.stepdefinitions;
 
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.ssk.qa.utils.ExtentReportManager;
 
-import io.cucumber.java.*;
+import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Hooks {
 
     public static WebDriver driver;
-    public static ExtentReports extent = ExtentReportManager.getInstance();
-    public static ExtentTest test;
+    private static ExtentReports extent = ExtentReportManager.getInstance();
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
     @Before
     public void setup(Scenario scenario) {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
         driver.manage().window().maximize();
-        
-     // Global implicit wait of 5 seconds
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        
-        test = extent.createTest(scenario.getName());
+
+        ExtentTest scenarioTest = extent.createTest(scenario.getName());
+        test.set(scenarioTest);
     }
 
     @AfterStep
     public void afterEachStep(Scenario scenario) {
         if (scenario.isFailed()) {
-            test.log(Status.FAIL, "Step failed: " + scenario.getName());
+            test.get().log(Status.FAIL, "❌ Step failed: " + scenario.getName());
         } else {
-            test.log(Status.PASS, "Step passed");
+            test.get().log(Status.PASS, "✅ Step passed");
         }
     }
 
@@ -45,7 +48,11 @@ public class Hooks {
         if (driver != null) {
             driver.quit();
         }
+        // Do NOT flush here — flush once after all scenarios
+    }
+
+    @AfterAll
+    public static void afterAll() {
         extent.flush();
     }
 }
-

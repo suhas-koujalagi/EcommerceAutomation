@@ -1,330 +1,211 @@
-[2025-11-09 12:54:21] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-09 12:54:21] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-09 12:54:21] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-09 12:54:21] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-09 12:54:26] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:54:27] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:54:27] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-09 12:54:27] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-09 12:54:27] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-09 12:54:27] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-09 12:54:27] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-09 12:54:27] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-09 12:54:28] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-09 12:54:28] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-09 12:54:29] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-09 12:54:29] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-09 12:54:29] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-09 12:54:29] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-09 12:54:30] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-09 12:54:30] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-09 12:54:31] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-09 12:54:31] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-09 12:54:35] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:54:35] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-09 12:54:36] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-09 12:54:36] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-09 12:54:36] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-09 12:54:37] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:54:37] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-09 12:54:37] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-09 12:54:38] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-09 12:54:38] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-09 12:54:45] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:54:47] ERROR EndToEndTest - ❌ Locked user was able to log in! locked_out_user
-[2025-11-09 12:54:47] WARN  RetryAnalyzer - 🔁 Retrying test: verifyEndToEndTestWorkflow | Attempt 2
-[2025-11-09 12:54:48] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-09 12:54:48] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-09 12:54:55] ERROR EndToEndTest - ❌ Locked user was able to log in! locked_out_user
-[2025-11-09 12:54:55] WARN  RetryAnalyzer - 🔁 Retrying test: verifyEndToEndTestWorkflow | Attempt 2
-[2025-11-09 12:54:56] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-09 12:54:56] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-09 12:54:57] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:55:07] ERROR EndToEndTest - ❌ Locked user was able to log in! locked_out_user
-[2025-11-09 12:55:07] WARN  RetryAnalyzer - 🔁 Retrying test: verifyEndToEndTestWorkflow | Attempt 3
-[2025-11-09 12:55:08] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-09 12:55:08] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-09 12:55:10] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:55:16] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:55:21] ERROR EndToEndTest - ❌ Locked user was able to log in! locked_out_user
-[2025-11-09 12:55:21] WARN  RetryAnalyzer - 🔁 Retrying test: verifyEndToEndTestWorkflow | Attempt 3
-[2025-11-09 12:55:22] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-09 12:55:22] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-09 12:55:26] ERROR EndToEndTest - ❌ Locked user was able to log in! locked_out_user
-[2025-11-09 12:55:26] ERROR RetryAnalyzer - ❌ Test failed after 3 attempts: verifyEndToEndTestWorkflow
-[2025-11-09 12:55:27] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-09 12:55:27] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-09 12:55:33] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:55:37] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 12:55:37] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-09 12:55:37] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-09 12:55:37] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-09 12:55:38] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-09 12:55:38] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-09 12:55:38] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-09 12:55:43] ERROR EndToEndTest - ❌ Locked user was able to log in! locked_out_user
-[2025-11-09 12:55:43] ERROR RetryAnalyzer - ❌ Test failed after 3 attempts: verifyEndToEndTestWorkflow
-[2025-11-09 13:01:03] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-09 13:01:03] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-09 13:01:03] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-09 13:01:03] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-09 13:01:10] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 13:01:11] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-09 13:01:11] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-09 13:01:11] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 13:01:11] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-09 13:01:11] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-09 13:01:12] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-09 13:01:12] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-09 13:01:12] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-09 13:01:12] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-09 13:01:13] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-09 13:01:13] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-09 13:01:13] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-09 13:01:13] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-09 13:01:14] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-09 13:01:14] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-09 13:01:15] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-09 13:01:15] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-09 13:01:19] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 13:01:21] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 13:01:22] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-09 13:01:22] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-09 13:01:22] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-09 13:01:22] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-09 13:01:23] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-09 13:01:23] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-09 13:01:24] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-09 13:01:24] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-09 13:01:29] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 13:01:29] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-09 13:01:30] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-09 13:01:30] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-09 13:01:35] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-09 13:01:35] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-09 13:01:35] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-09 13:01:36] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-09 13:01:36] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-09 13:01:37] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-09 13:01:37] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-09 13:01:39] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-10 12:03:50] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-10 12:03:50] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-10 12:03:53] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-10 12:03:54] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-10 12:03:54] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-10 12:03:54] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-10 12:03:55] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-10 12:03:55] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-10 12:03:55] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-10 12:03:57] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-10 12:03:57] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-10 12:04:05] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-10 12:04:05] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-10 12:04:05] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-10 12:04:06] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-10 12:04:06] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-10 12:04:06] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-10 12:04:07] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-10 12:04:07] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-10 12:04:08] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-10 12:04:09] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-10 12:04:09] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-10 12:04:09] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-10 12:04:09] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-10 12:04:09] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-10 12:04:09] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-10 12:04:10] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-10 12:04:11] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-10 12:04:11] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-10 12:04:12] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-10 12:04:12] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-10 12:04:12] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-10 12:04:14] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-10 12:04:23] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-10 12:04:24] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-10 12:04:25] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-10 12:04:25] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-10 12:04:29] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-10 12:04:30] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-10 12:04:30] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-10 12:04:30] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-10 12:04:31] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-10 12:04:32] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-10 12:04:32] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-11 10:47:02] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 10:47:02] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-11 10:47:04] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 10:47:04] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-11 10:47:05] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 10:47:08] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 10:47:09] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-11 10:47:10] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-11 10:47:10] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-11 10:47:10] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 10:47:10] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-11 10:47:11] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 10:47:12] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-11 10:47:12] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-11 10:47:13] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-11 10:47:13] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-11 10:47:13] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-11 10:47:13] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-11 10:47:15] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 10:47:15] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-11 10:47:17] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 10:47:17] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-11 10:47:18] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 10:47:19] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-11 10:47:19] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-11 10:47:19] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 10:47:20] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-11 10:47:21] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 10:47:21] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-11 10:47:21] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-11 10:47:23] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 10:47:23] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-11 10:47:27] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 10:47:32] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-11 10:47:33] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 10:47:33] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-11 10:47:36] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 10:47:37] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-11 10:47:37] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-11 10:47:37] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 10:47:39] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-11 10:47:40] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-11 10:47:40] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-11 10:47:41] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-11 11:39:59] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 11:39:59] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 11:39:59] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-11 11:39:59] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-11 11:40:06] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 11:40:06] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-11 11:40:06] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 11:40:06] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-11 11:40:06] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 11:40:07] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-11 11:40:07] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-11 11:40:07] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 11:40:07] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-11 11:40:08] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-11 11:40:08] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-11 11:40:08] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-11 11:40:09] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-11 11:40:09] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-11 11:40:09] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 11:40:09] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-11 11:40:10] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 11:40:10] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-11 11:40:13] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 11:40:13] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-11 11:40:13] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-11 11:40:14] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 11:40:14] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-11 11:40:14] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 11:40:15] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-11 11:40:15] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-11 11:40:16] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 11:40:16] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-11 11:40:22] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 11:40:25] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-11 11:40:26] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 11:40:26] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-11 11:40:32] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 11:40:32] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-11 11:40:32] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-11 11:40:33] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-11 11:40:33] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 11:40:34] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-11 11:40:34] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-11 11:40:34] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-11 11:52:04] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 11:52:04] INFO  EndToEndTest - ? Starting test for user: standard_user
-[2025-11-11 11:52:05] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 11:52:05] INFO  EndToEndTest - ? Starting test for user: visual_user
-[2025-11-11 11:52:05] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
-[2025-11-11 11:52:12] INFO  EndToEndTest - ? Login successful for user: standard_user
-[2025-11-11 11:52:12] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
-[2025-11-11 11:52:12] INFO  EndToEndTest - ? Proceeding to checkout page
-[2025-11-11 11:52:13] INFO  EndToEndTest - ? Order completed successfully for standard_user
-[2025-11-11 11:52:14] INFO  EndToEndTest - ? Logout action performed for standard_user
-[2025-11-11 11:52:14] INFO  EndToEndTest - ? Logout successful for standard_user
-[2025-11-11 11:52:14] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
-[2025-11-11 11:52:15] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 11:52:15] INFO  EndToEndTest - ? Starting test for user: locked_out_user
-[2025-11-11 11:52:15] INFO  EndToEndTest - ? Login successful for user: visual_user
-[2025-11-11 11:52:16] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
-[2025-11-11 11:52:16] INFO  EndToEndTest - ? Proceeding to checkout page
-[2025-11-11 11:52:17] INFO  EndToEndTest - ? Order completed successfully for visual_user
-[2025-11-11 11:52:18] INFO  EndToEndTest - ? Logout action performed for visual_user
-[2025-11-11 11:52:18] INFO  EndToEndTest - ? Logout successful for visual_user
-[2025-11-11 11:52:21] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
-[2025-11-11 11:52:21] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 11:52:21] INFO  EndToEndTest - ? Starting test for user: standard_user
-[2025-11-11 11:52:28] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
-[2025-11-11 11:52:28] INFO  EndToEndTest - ? Login successful for user: standard_user
-[2025-11-11 11:52:28] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
-[2025-11-11 11:52:29] INFO  EndToEndTest - ? Proceeding to checkout page
-[2025-11-11 11:52:29] INFO  EndToEndTest - ? Order completed successfully for standard_user
-[2025-11-11 11:52:30] INFO  EndToEndTest - ? Logout action performed for standard_user
-[2025-11-11 11:52:30] INFO  EndToEndTest - ? Logout successful for standard_user
-[2025-11-11 11:52:31] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 11:52:31] INFO  EndToEndTest - ? Starting test for user: locked_out_user
-[2025-11-11 11:52:31] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
-[2025-11-11 11:52:33] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 11:52:33] INFO  EndToEndTest - ? Starting test for user: visual_user
-[2025-11-11 11:52:36] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
-[2025-11-11 11:52:45] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
-[2025-11-11 11:52:46] INFO  EndToEndTest - ? Login successful for user: visual_user
-[2025-11-11 11:52:46] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
-[2025-11-11 11:52:46] INFO  EndToEndTest - ? Proceeding to checkout page
-[2025-11-11 11:52:46] INFO  EndToEndTest - ? Order completed successfully for visual_user
-[2025-11-11 11:52:47] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
-[2025-11-11 11:52:47] INFO  EndToEndTest - ? Logout action performed for visual_user
-[2025-11-11 11:52:47] INFO  EndToEndTest - ? Logout successful for visual_user
-[2025-11-11 12:30:42] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 12:30:42] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 12:30:42] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-11 12:30:42] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
-[2025-11-11 12:30:46] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 12:30:46] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 12:30:57] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-11 12:30:57] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
-[2025-11-11 12:30:59] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 12:30:59] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-11 12:31:00] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 12:31:00] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
-[2025-11-11 12:31:02] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 12:31:02] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 12:31:03] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-11 12:31:03] INFO  EndToEndTest - ✅ Login successful for user: standard_user
-[2025-11-11 12:31:03] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-11 12:31:03] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
-[2025-11-11 12:31:03] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 12:31:03] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 12:31:04] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-11 12:31:04] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
-[2025-11-11 12:31:05] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-11 12:31:05] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-11 12:31:05] INFO  EndToEndTest - 👋 Logout action performed for standard_user
-[2025-11-11 12:31:05] INFO  EndToEndTest - ✅ Logout successful for standard_user
-[2025-11-11 12:31:06] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
-[2025-11-11 12:31:06] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-11 12:31:07] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
-[2025-11-11 12:31:07] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
-[2025-11-11 12:31:09] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 12:31:10] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-11 12:31:10] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-11 12:31:10] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
-[2025-11-11 12:31:10] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 12:31:11] INFO  EndToEndTest - ✅ Login successful for user: visual_user
-[2025-11-11 12:31:11] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
-[2025-11-11 12:31:11] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-11 12:31:11] INFO  EndToEndTest - 💳 Proceeding to checkout page
-[2025-11-11 12:31:12] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-11 12:31:12] INFO  EndToEndTest - ✅ Logout successful for visual_user
-[2025-11-11 12:31:12] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
-[2025-11-11 12:31:13] INFO  EndToEndTest - 👋 Logout action performed for visual_user
-[2025-11-11 12:31:13] INFO  EndToEndTest - ✅ Logout successful for visual_user
+[2025-11-12 10:50:10] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 10:50:10] INFO  EndToEndTest - ? Starting test for user: locked_out_user
+[2025-11-12 10:50:14] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 10:50:25] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
+[2025-11-12 10:50:26] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 10:50:26] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-12 10:50:29] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 10:50:30] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-12 10:50:30] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-12 10:50:30] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 10:50:31] INFO  EndToEndTest - ? Order completed successfully for visual_user
+[2025-11-12 10:50:31] INFO  EndToEndTest - ? Logout action performed for visual_user
+[2025-11-12 10:50:31] INFO  EndToEndTest - ? Logout successful for visual_user
+[2025-11-12 10:50:32] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 10:50:32] INFO  EndToEndTest - ? Starting test for user: standard_user
+[2025-11-12 10:50:35] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 10:50:36] INFO  EndToEndTest - ? Login successful for user: standard_user
+[2025-11-12 10:50:36] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
+[2025-11-12 10:50:36] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 10:50:37] INFO  EndToEndTest - ? Order completed successfully for standard_user
+[2025-11-12 10:50:37] INFO  EndToEndTest - ? Logout action performed for standard_user
+[2025-11-12 10:50:37] INFO  EndToEndTest - ? Logout successful for standard_user
+[2025-11-12 10:55:04] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-12 10:55:04] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-12 10:55:04] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
+[2025-11-12 10:55:04] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
+[2025-11-12 10:55:08] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-12 10:55:08] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-12 10:55:08] INFO  EndToEndTest - ✅ Login successful for user: standard_user
+[2025-11-12 10:55:08] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
+[2025-11-12 10:55:09] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-12 10:55:09] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
+[2025-11-12 10:55:10] INFO  EndToEndTest - 👋 Logout action performed for standard_user
+[2025-11-12 10:55:10] INFO  EndToEndTest - ✅ Logout successful for standard_user
+[2025-11-12 10:55:11] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-12 10:55:11] INFO  EndToEndTest - 🚀 Starting test for user: locked_out_user
+[2025-11-12 10:55:14] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-12 10:55:19] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
+[2025-11-12 10:55:20] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-12 10:55:20] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
+[2025-11-12 10:55:24] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-12 10:55:24] INFO  EndToEndTest - ✅ Login successful for user: visual_user
+[2025-11-12 10:55:25] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
+[2025-11-12 10:55:25] WARN  EndToEndTest - 🔒 Locked user detected and correctly blocked: locked_out_user
+[2025-11-12 10:55:25] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-12 10:55:26] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-12 10:55:26] INFO  EndToEndTest - 🚀 Starting test for user: visual_user
+[2025-11-12 10:55:26] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
+[2025-11-12 10:55:27] INFO  EndToEndTest - 👋 Logout action performed for visual_user
+[2025-11-12 10:55:27] INFO  EndToEndTest - ✅ Logout successful for visual_user
+[2025-11-12 10:55:28] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-12 10:55:28] INFO  EndToEndTest - 🚀 Starting test for user: standard_user
+[2025-11-12 10:55:28] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-12 10:55:29] INFO  EndToEndTest - ✅ Login successful for user: visual_user
+[2025-11-12 10:55:29] INFO  EndToEndTest - 🛒 Product successfully added to cart for visual_user
+[2025-11-12 10:55:29] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-12 10:55:30] INFO  EndToEndTest - 🎉 Order completed successfully for visual_user
+[2025-11-12 10:55:30] INFO  EndToEndTest - 👋 Logout action performed for visual_user
+[2025-11-12 10:55:30] INFO  EndToEndTest - ✅ Logout successful for visual_user
+[2025-11-12 10:55:32] INFO  EndToEndTest - 🌐 Navigated to SauceDemo homepage
+[2025-11-12 10:55:32] INFO  EndToEndTest - ✅ Login successful for user: standard_user
+[2025-11-12 10:55:32] INFO  EndToEndTest - 🛒 Product successfully added to cart for standard_user
+[2025-11-12 10:55:32] INFO  EndToEndTest - 💳 Proceeding to checkout page
+[2025-11-12 10:55:33] INFO  EndToEndTest - 🎉 Order completed successfully for standard_user
+[2025-11-12 10:55:34] INFO  EndToEndTest - 👋 Logout action performed for standard_user
+[2025-11-12 10:55:34] INFO  EndToEndTest - ✅ Logout successful for standard_user
+[2025-11-12 11:19:27] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 11:19:27] INFO  EndToEndTest - ? Starting test for user: standard_user
+[2025-11-12 11:19:31] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 11:19:31] INFO  EndToEndTest - ? Login successful for user: standard_user
+[2025-11-12 11:19:31] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
+[2025-11-12 11:19:32] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 11:19:32] INFO  EndToEndTest - ? Order completed successfully for standard_user
+[2025-11-12 11:19:32] INFO  EndToEndTest - ? Logout action performed for standard_user
+[2025-11-12 11:19:32] INFO  EndToEndTest - ? Logout successful for standard_user
+[2025-11-12 11:19:34] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 11:19:34] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-12 11:19:36] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 11:19:37] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-12 11:19:37] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-12 11:19:37] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 11:19:38] INFO  EndToEndTest - ? Order completed successfully for visual_user
+[2025-11-12 11:19:38] INFO  EndToEndTest - ? Logout action performed for visual_user
+[2025-11-12 11:19:38] INFO  EndToEndTest - ? Logout successful for visual_user
+[2025-11-12 11:19:39] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 11:19:39] INFO  EndToEndTest - ? Starting test for user: locked_out_user
+[2025-11-12 11:19:45] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 11:19:55] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
+[2025-11-12 11:23:01] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 11:23:01] INFO  EndToEndTest - ? Starting test for user: standard_user
+[2025-11-12 11:23:07] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 11:23:07] INFO  EndToEndTest - ? Login successful for user: standard_user
+[2025-11-12 11:23:07] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
+[2025-11-12 11:23:08] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 11:23:08] INFO  EndToEndTest - ? Order completed successfully for standard_user
+[2025-11-12 11:23:09] INFO  EndToEndTest - ? Logout action performed for standard_user
+[2025-11-12 11:23:09] INFO  EndToEndTest - ? Logout successful for standard_user
+[2025-11-12 11:23:10] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 11:23:10] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-12 11:23:14] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 11:23:14] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-12 11:23:14] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-12 11:23:14] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 11:23:15] INFO  EndToEndTest - ? Order completed successfully for visual_user
+[2025-11-12 11:23:15] INFO  EndToEndTest - ? Logout action performed for visual_user
+[2025-11-12 11:23:15] INFO  EndToEndTest - ? Logout successful for visual_user
+[2025-11-12 11:23:16] INFO  EndToEndTest - Thread=main | Browser=from-xml-or-config
+[2025-11-12 11:23:16] INFO  EndToEndTest - ? Starting test for user: locked_out_user
+[2025-11-12 11:23:21] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 11:23:31] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
+[2025-11-12 12:07:09] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-12 12:07:09] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-12 12:07:10] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-12 12:07:10] INFO  EndToEndTest - ? Starting test for user: standard_user
+[2025-11-12 12:07:13] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 12:07:14] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-12 12:07:14] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-12 12:07:15] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 12:07:15] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 12:07:16] INFO  EndToEndTest - ? Login successful for user: standard_user
+[2025-11-12 12:07:16] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
+[2025-11-12 12:07:17] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 12:07:17] INFO  EndToEndTest - ? Order completed successfully for visual_user
+[2025-11-12 12:07:17] INFO  EndToEndTest - ? Logout action performed for visual_user
+[2025-11-12 12:07:17] INFO  EndToEndTest - ? Logout successful for visual_user
+[2025-11-12 12:07:19] INFO  EndToEndTest - ? Order completed successfully for standard_user
+[2025-11-12 12:07:20] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-12 12:07:20] INFO  EndToEndTest - ? Starting test for user: locked_out_user
+[2025-11-12 12:07:20] INFO  EndToEndTest - ? Logout action performed for standard_user
+[2025-11-12 12:07:20] INFO  EndToEndTest - ? Logout successful for standard_user
+[2025-11-12 12:07:22] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-12 12:07:22] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-12 12:07:25] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 12:07:26] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 12:07:28] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-12 12:07:28] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-12 12:07:28] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 12:07:30] INFO  EndToEndTest - ? Order completed successfully for visual_user
+[2025-11-12 12:07:35] WARN  RetryAnalyzer - ? Retrying test: verifyEndToEndTestWorkflow | Attempt 2
+[2025-11-12 12:07:37] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-12 12:07:37] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-12 12:07:38] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
+[2025-11-12 12:07:38] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 12:07:39] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-12 12:07:39] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-12 12:07:40] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 12:07:40] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-12 12:07:40] INFO  EndToEndTest - ? Starting test for user: standard_user
+[2025-11-12 12:07:41] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 12:07:42] INFO  EndToEndTest - ? Login successful for user: standard_user
+[2025-11-12 12:07:43] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
+[2025-11-12 12:07:43] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 12:07:44] INFO  EndToEndTest - ? Order completed successfully for standard_user
+[2025-11-12 12:07:45] INFO  EndToEndTest - ? Logout action performed for standard_user
+[2025-11-12 12:07:45] INFO  EndToEndTest - ? Logout successful for standard_user
+[2025-11-12 12:07:49] WARN  RetryAnalyzer - ? Retrying test: verifyEndToEndTestWorkflow | Attempt 3
+[2025-11-12 12:07:51] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-12 12:07:51] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-12 12:07:52] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 12:07:53] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-12 12:07:53] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-12 12:07:53] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-12 12:08:03] ERROR RetryAnalyzer - ? Test failed after 3 attempts: verifyEndToEndTestWorkflow
+[2025-11-12 12:08:04] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-12 12:08:04] INFO  EndToEndTest - ? Starting test for user: locked_out_user
+[2025-11-12 12:08:06] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-12 12:08:17] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
+[2025-11-13 09:31:41] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-13 09:31:41] INFO  EndToEndTest - ? Starting test for user: standard_user
+[2025-11-13 09:31:55] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-13 09:31:56] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-13 09:31:56] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-13 09:31:57] INFO  EndToEndTest - ? Login successful for user: standard_user
+[2025-11-13 09:31:57] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
+[2025-11-13 09:31:57] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-13 09:31:58] INFO  EndToEndTest - ? Order completed successfully for standard_user
+[2025-11-13 09:31:59] INFO  EndToEndTest - ? Logout action performed for standard_user
+[2025-11-13 09:31:59] INFO  EndToEndTest - ? Logout successful for standard_user
+[2025-11-13 09:31:59] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-13 09:31:59] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-13 09:32:00] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-13 09:32:00] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-13 09:32:00] INFO  EndToEndTest - ? Order completed successfully for visual_user
+[2025-11-13 09:32:01] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-13 09:32:01] INFO  EndToEndTest - ? Starting test for user: visual_user
+[2025-11-13 09:32:01] INFO  EndToEndTest - ? Logout action performed for visual_user
+[2025-11-13 09:32:01] INFO  EndToEndTest - ? Logout successful for visual_user
+[2025-11-13 09:32:03] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-13 09:32:03] INFO  EndToEndTest - ? Starting test for user: locked_out_user
+[2025-11-13 09:32:04] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-13 09:32:05] INFO  EndToEndTest - ? Login successful for user: visual_user
+[2025-11-13 09:32:05] INFO  EndToEndTest - ? Product successfully added to cart for visual_user
+[2025-11-13 09:32:05] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-13 09:32:06] INFO  EndToEndTest - ? Order completed successfully for visual_user
+[2025-11-13 09:32:06] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-13 09:32:06] INFO  EndToEndTest - ? Logout action performed for visual_user
+[2025-11-13 09:32:06] INFO  EndToEndTest - ? Logout successful for visual_user
+[2025-11-13 09:32:07] INFO  EndToEndTest - Thread=TestNG-tests-1 | Browser=from-xml-or-config
+[2025-11-13 09:32:07] INFO  EndToEndTest - ? Starting test for user: locked_out_user
+[2025-11-13 09:32:09] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-13 09:32:16] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
+[2025-11-13 09:32:18] INFO  EndToEndTest - Thread=TestNG-tests-2 | Browser=from-xml-or-config
+[2025-11-13 09:32:18] INFO  EndToEndTest - ? Starting test for user: standard_user
+[2025-11-13 09:32:20] WARN  EndToEndTest - ? Locked user detected and correctly blocked: locked_out_user
+[2025-11-13 09:32:21] INFO  EndToEndTest - ? Navigated to SauceDemo homepage
+[2025-11-13 09:32:21] INFO  EndToEndTest - ? Login successful for user: standard_user
+[2025-11-13 09:32:21] INFO  EndToEndTest - ? Product successfully added to cart for standard_user
+[2025-11-13 09:32:21] INFO  EndToEndTest - ? Proceeding to checkout page
+[2025-11-13 09:32:22] INFO  EndToEndTest - ? Order completed successfully for standard_user
+[2025-11-13 09:32:23] INFO  EndToEndTest - ? Logout action performed for standard_user
+[2025-11-13 09:32:23] INFO  EndToEndTest - ? Logout successful for standard_user

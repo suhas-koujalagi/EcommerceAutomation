@@ -6,7 +6,7 @@
       <class name="com.ssk.qa.runners.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 2"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.ssk.qa.runners.TestRunner -->

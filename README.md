@@ -42,16 +42,16 @@ All backed by extensive reporting, logging, retries, and screenshots.
 ----------------------------------------------------------------
 | Component                         | Version / Tool           |
 |-----------------------------------|--------------------------|
-| **Java**                          | 17                       |
-| **Selenium WebDriver**            | 4.14.0                   |
-| **TestNG**                        | 7.8.0                    |
-| **Cucumber (TestNG integration)** | 7.30.0                   |
-| **Maven**                         | Build/Dependency Manager |
-| **Log4j2**                        | Logging                  |
-| **ExtentReports**                 | 5.0.9                    |
-| **Apache POI**                    | Excel test data          |
-| **WebDriverManager**              | Driver setup             |
-| **Jenkins**                       | CI/CD                    |
+| Java                              | 17                       |
+| Selenium WebDriver                | 4.14.0                   |
+| TestNG                            | 7.8.0                    |
+| Cucumber (TestNG integration)     | 7.30.0                   |
+| Maven                             | Build/Dependency Manager |
+| Log4j2                            | Logging                  |
+| ExtentReports                     | 5.0.9                    |
+| Apache POI                        | Excel test data          |
+| WebDriverManager                  | Driver setup             |
+| Jenkins                           | CI/CD                    |
 ----------------------------------------------------------------
 ```
 
@@ -111,9 +111,13 @@ EcommerceAutomation/
 ## Running the Tests
 
 ### Run the TestNG Framework (Full Regression Suite)
-``` 
-mvn clean test -DsuiteXmlFile=testng.xml 
-```
+> [!INFO]
+> To run all TestNG test cases, use:
+>
+> ```
+> mvn clean test -DsuiteXmlFile=testng.xml
+> ```
+
 
 - This runs:
 `All TestNG tests`, `Retry Analyzer`, `Screenshots on failure` 

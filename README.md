@@ -1,4 +1,4 @@
-# EcommerceAutomation – Hybrid Test Automation Framework
+# EcommerceAutomation – Test Automation Framework
 A complete end-to-end automation framework designed for modern QA engineering.
 Built with a powerful blend of Selenium, TestNG, Cucumber BDD, Page Object Model, Maven, Log4j2, Excel data-driven execution, and Jenkins CI/CD.
 
@@ -111,42 +111,34 @@ EcommerceAutomation/
 ## Running the Tests
 
 ### Run the TestNG Framework (Full Regression Suite)
-``` mvn clean test -DsuiteXmlFile=testng.xml ```
+``` 
+mvn clean test -DsuiteXmlFile=testng.xml 
+```
 
 - This runs:
-    - All TestNG tests
-    - Retry Analyzer
-    - Screenshots on failure
-    - Log4j2 logging
-    - Extent HTML report generation
+`All TestNG tests`, `Retry Analyzer`, `Screenshots on failure` 
+`Log4j2 logging`, `Extent HTML report generation`
 
 - Report Location: `/reports/Ecommerce_Automation_Report_<timestamp>.html`
 
-
 ### Run Cucumber Tests (BDD)
-``` mvn test -Dcucumber.options="--plugin pretty" ```
+``` 
+mvn test -Dcucumber.options="--plugin pretty" 
+```
 or execute: `TestRunner.java`
 
 - Cucumber HTML Report Location: `/target/cucumber-html-report/`
 
 ## What’s Tested
-- Multi-user login test (Excel-driven)
-- Add to cart
-- Checkout workflow
-- Logout
-- Full end-to-end scenarios with parallel execution
+`Multi-user login test (Excel-driven)`, `Add to cart`, `Checkout workflow`, `Logout`
+`Full end-to-end scenarios with parallel execution`
 
+`
 ## CI/CD – Jenkins Pipeline
 This project supports:
-✔ Manual trigger
-✔ GitHub automatic trigger
-✔ Publishing HTML reports
-✔ Running TestNG suite via Jenkins
-✔ Running Cucumber (optional separate job)
+✔ Manual trigger ✔ GitHub automatic trigger ✔ Publishing HTML reports
+✔ Running TestNG suite via Jenkins ✔ Running Cucumber (optional separate job)
+`
 
 ## Future Enhancements
-Docker-based Selenium Grid
-Allure Reporting
-Distributed parallel execution
-API + UI hybrid testing
-Additional workflows & data sets
+Docker-based Selenium Grid, Allure Reporting, Distributed parallel execution, API + UI hybrid testing, Additional workflows & data sets

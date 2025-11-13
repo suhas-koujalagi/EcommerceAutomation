@@ -109,15 +109,12 @@ EcommerceAutomation/
 ```
 
 ## Running the Tests
+>To run all TestNG test cases, refer fallowing cmd and files:
 
 ### Run the TestNG Framework (Full Regression Suite)
-> [!INFO]
-> To run all TestNG test cases, use:
->
-> ```
-> mvn clean test -DsuiteXmlFile=testng.xml
-> ```
-
+ ```
+ mvn clean test -DsuiteXmlFile=testng.xml
+ ```
 
 - This runs:
 `All TestNG tests`, `Retry Analyzer`, `Screenshots on failure` 
@@ -137,12 +134,10 @@ or execute: `TestRunner.java`
 `Multi-user login test (Excel-driven)`, `Add to cart`, `Checkout workflow`, `Logout`
 `Full end-to-end scenarios with parallel execution`
 
-`
 ## CI/CD – Jenkins Pipeline
-This project supports:
+>This project supports:
 ✔ Manual trigger ✔ GitHub automatic trigger ✔ Publishing HTML reports
 ✔ Running TestNG suite via Jenkins ✔ Running Cucumber (optional separate job)
-`
 
 ## Future Enhancements
 Docker-based Selenium Grid, Allure Reporting, Distributed parallel execution, API + UI hybrid testing, Additional workflows & data sets

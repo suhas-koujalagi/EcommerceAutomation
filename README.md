@@ -109,7 +109,7 @@ EcommerceAutomation/
 ```
 
 ## Running the Tests
->To run all TestNG test cases, refer fallowing cmd and files:
+> Use the following command to run the complete TestNG automation suite:
 
 ### Run the TestNG Framework (Full Regression Suite)
  ```
@@ -117,10 +117,10 @@ EcommerceAutomation/
  ```
 
 - This runs:
-`All TestNG tests`, `Retry Analyzer`, `Screenshots on failure` 
+`All TestNG tests`, `Retry Analyzer`, `Screenshots on failure`, 
 `Log4j2 logging`, `Extent HTML report generation`
 
-- Report Location: `/reports/Ecommerce_Automation_Report_<timestamp>.html`
+- Report Location: `reports/Ecommerce_Automation_Report_<timestamp>.html`
 
 ### Run Cucumber Tests (BDD)
 ``` 
@@ -131,11 +131,11 @@ or execute: `TestRunner.java`
 - Cucumber HTML Report Location: `/target/cucumber-html-report/`
 
 ## What’s Tested
-`Multi-user login test (Excel-driven)`, `Add to cart`, `Checkout workflow`, `Logout`
+`Multi-user login test (Excel-driven)`, `Add to cart`, `Checkout workflow`, `Logout`,
 `Full end-to-end scenarios with parallel execution`
 
 ## CI/CD – Jenkins Pipeline
->This project supports:
+This project supports:
 ✔ Manual trigger ✔ GitHub automatic trigger ✔ Publishing HTML reports
 ✔ Running TestNG suite via Jenkins ✔ Running Cucumber (optional separate job)
 

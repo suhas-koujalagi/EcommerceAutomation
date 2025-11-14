@@ -4,18 +4,6 @@
   <listeners>
     <listener class-name="com.ssk.qa.utils.TestListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="com.ssk.qa.tests.EndToEndTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="verifyEndToEndTestWorkflow" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.ssk.qa.tests.EndToEndTest -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
   <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
@@ -23,7 +11,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifyEndToEndTestWorkflow" invocation-numbers="0"/>
+          <include name="verifyEndToEndTestWorkflow" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.ssk.qa.tests.EndToEndTest -->
     </classes>

@@ -6,18 +6,27 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CartPage {
-    private WebDriver driver;
+	private WebDriver driver;
 
-    @FindBy(id = "checkout")
-    private WebElement checkoutButton;
+	@FindBy(id = "checkout")
+	private WebElement checkoutButton;
 
-    public CartPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
+	public CartPage(WebDriver driver) {
+		this.setDriver(driver);
+		PageFactory.initElements(driver, this);
+	}
 
-    public void clickCheckout() {
-        checkoutButton.click();
-    }
+	public void clickCheckout() {
+		checkoutButton.click();
+	}
+
+	//additional getter and setter for driver instance
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public void setDriver(WebDriver driver) {
+		this.driver = driver;
+	}
 }
 

@@ -21,7 +21,7 @@ public class ProductsPage {
 	private WebElement productPageTitle;
 
 	public ProductsPage(WebDriver driver) {
-		this.driver = driver;
+		this.setDriver(driver);
 		PageFactory.initElements(driver, this);
 	}
 
@@ -40,6 +40,15 @@ public class ProductsPage {
 	// to verify weather we are on product page
 	public boolean isOnProductPage() {
 		return productPageTitle.isDisplayed();
+	}
+
+	//additional getter and setter for driver instance
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public void setDriver(WebDriver driver) {
+		this.driver = driver;
 	}
 
 }

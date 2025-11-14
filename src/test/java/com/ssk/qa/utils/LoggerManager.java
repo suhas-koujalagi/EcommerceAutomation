@@ -5,16 +5,16 @@ import org.apache.logging.log4j.Logger;
 
 /**
  * Centralized Logger Manager.
- * Used to get Log4j loggers for any class without repeating code.
+ * Used to get Log4j loggers for any class.
  */
 public class LoggerManager {
 
-    private LoggerManager() {
-        // private constructor to prevent instantiation
-    }
+	private LoggerManager() {
+		// private constructor to prevent instantiation
+	}
 
-    public static Logger getLogger(Class<?> clazz) {
-        return LogManager.getLogger(clazz);
-    }
+	public static Logger getLogger(Class<?> clazz) {
+		return LogManager.getLogger(clazz);
+	}
 }
 
